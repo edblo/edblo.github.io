@@ -1,0 +1,23 @@
+div .col-md{
+    padding: 2px;
+}
+
+.mi_link{
+    text-decoration: none;
+    color: black;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+body{
+    min-width: 360px;
+    background-color: white;
+}
+
+
+@media(max-width:576px){
+    body{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
