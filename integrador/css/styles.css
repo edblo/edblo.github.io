@@ -1,0 +1,226 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: white;
+    justify-content: center;
+}
+
+
+/* Barra navegacion superior*/
+.div_navbars {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(53, 58, 64);
+}
+
+.mi_link {
+    color: rgb(154, 157, 160);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 16px 16px;
+    display: block;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+.div_padre {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+@media (max-width: 990px) {
+    .padre {
+        align-items: baseline;
+    }
+
+    ul.navTopDer li {
+        float: none;
+    }
+
+    ul.navTopDer li a {
+        padding: 5px;
+    }
+}
+
+.imgBsAs {
+    position: relative;
+}
+
+.texto_sobre_img {
+    width: 600px;
+    text-align: right;
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    font-size: larger;
+}
+
+.texto_sobre_img a {
+    font-size: 20px;
+    margin: 2px;
+}
+
+@media (max-width: 768px) {
+    .texto_sobre_img {
+        position: relative;
+        text-align: center;
+        color: white;
+        background-color: grey;
+        font-size: medium;
+        padding: 10px;
+        margin: 0px;
+        width: 100%;
+        left: 0px;
+    }
+}
+
+
+/* 3 tarjetas */
+.card {
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn-warning {
+    padding: 0px 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-info {
+    padding: 0px 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-danger {
+    padding: 0px 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-dark {
+    padding: 0px 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* imagen (izquierda) y texto (derecha) */
+.imagen_texto {
+    background-color: rgb(53, 58, 64);
+    color: white;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.imagen_texto img {
+    vertical-align: middle;
+}
+
+@media (min-width:850px) {
+    .imagen_texto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0px;
+    }
+}
+
+/* Conviértete en un orador*/
+.orador {
+    text-align: center;
+    margin: 5px;
+    padding: 0px;
+}
+
+.orador p {
+    text-align: center;
+    margin: 0px;
+    padding: 2px;
+}
+
+
+/* Nombre y Apellido del Orador */
+.nomApel {
+    margin: 5px;
+    padding: 0px;
+}
+
+.nomApel * {
+    margin: 0px;
+    padding: 2px;
+}
+
+/* Sobre que quieres hablar ?*/
+.hablar{
+    margin: 5px;
+    padding: 0px;
+}
+
+.hablar * {
+    display: block;
+    margin: 0px;
+    padding: 2px;
+}
+
+.hablar textarea {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    height: 8rem;
+}
+
+.hablar button {
+    background-color: rgb(150, 201, 62);
+    border: none;
+    margin: 14px 0;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+
+/*barra de navegacion inferior*/
+.navbar_footer {
+    background-color: rgb(29, 67, 88);
+    margin-bottom: 20px;
+}
+
+.navbar_footer a {
+    color: white;
+    margin: 0px 25x;
+    padding: 25px 25px;
+    text-decoration: none;
+}
+
+.navbar_footer a:hover {
+    color: black
+}
+
+@media (max-width: 1060px) {
+    .navbar_footer a {
+        padding: 15px 20px;
+    }
+}
