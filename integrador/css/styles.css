@@ -43,28 +43,28 @@ li {
     float: left;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     ul.navHeader li {
         float: none;
     }
-
     ul.navHeader li a {
         padding: 5px;
     }
 }
 
+
+/* carousel de imagenes de bs as */
 .texto_sobre_img {
     width: 600px;
     text-align: right;
     color: white;
     position: absolute;
-    bottom: 20%;
-    right: 10%;
-    font-size: larger;
+    top: 50%;
+    right: 5%;
+    font-size: medium;
 }
 
 .texto_sobre_img a {
-    font-size: 20px;
     margin: 2px;
 }
 
@@ -73,7 +73,7 @@ li {
         position: relative;
         text-align: center;
         color: white;
-        background-color: grey;
+        background-color: rgb(53, 58, 64);
         font-size: medium;
         padding: 10px;
         margin: 0px;
@@ -81,7 +81,6 @@ li {
         left: 0px;
     }
 }
-
 
 /* 3 tarjetas */
 .card {
@@ -92,28 +91,14 @@ img {
     max-width: 100%;
 }
 
-.btn-warning {
-    padding: 0px 3px;
+.card .btn{
+    padding: 1px 3px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight:600;
 }
 
-.btn-info {
-    padding: 0px 3px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.btn-danger {
-    padding: 0px 3px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.btn-dark {
-    padding: 0px 3px;
-    font-size: 16px;
-    font-weight: bold;
+.card .btn-info{
+    color: white;
 }
 
 
@@ -186,25 +171,25 @@ img {
 }
 
 
-/*barra de navegacion inferior*/
-footer {
+/*barra de navegacion inferior*/  
+footer div {
     background-color: rgb(29, 67, 88);
-    margin-bottom: 20px;
+    padding: 0%;
+    text-align: center;
+    margin: 1%;
+}
+
+footer div .col-md-2{
+    margin: 1% 1%;
 }
 
 footer a {
+    text-align: center;
     color: white;
-    margin: 0px 25x;
-    padding: 25px 25px;
+    padding: 0px;
     text-decoration: none;
 }
 
 footer a:hover {
     color: black
-}
-
-@media (max-width: 1060px) {
-    footer a {
-        padding: 15px 20px;
-    }
 }
