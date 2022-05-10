@@ -140,7 +140,7 @@ img {
 
 .nomApel * {
     margin: 0px;
-    padding: 2px;
+    padding: 5px;
 }
 
 /* Sobre que quieres hablar ?*/
@@ -168,6 +168,57 @@ img {
     margin: 14px 0;
     font-size: 1.3rem;
     width: 100%;
+}
+
+/* Venta de tickets */
+.venta *{
+    margin: 0px;
+    padding: 3px;
+}
+
+.venta input{
+    padding-left: 10px;
+}
+
+.venta button{
+    background-color: rgb(150, 201, 62);
+    border: none;
+    margin: 5px 0;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.venta label{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(136, 229, 229);
+    text-align: left;
+    padding-left: 15px;
+    border-radius: 6px;
+    padding-top:10px;
+}
+
+.venta select{
+    width: 100%;
+    border-radius: 5px;
+    border-color: rgb(195, 193, 193);
+}
+
+.tarjetas{
+    text-align: center;
+    border-radius: 0px;
+    border-color: blue;
+    border-width: 2px;
+    margin: 1px;
+    padding: 0px 3px;
+}
+
+.tarjetas *{
+    padding: 10px 0px;
+}
+
+.tarjetas:hover{
+    border-color: orange;
 }
 
 
