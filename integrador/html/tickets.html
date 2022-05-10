@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" type="image/jpg" href="../img/favicon.jpg">
+    <title>Tickets</title>
+</head>
+
+<body>
+    <header class="container-flex btn-toolbar  justify-content-between">
+        <div class="logo_CAC">
+            <div class="btn-group">
+                <img src="../img/codoacodo.png" alt="Logo Codo a Codo" style="height: 70px;">
+            </div>
+            <div class="btn-group">
+                <h2 style="color: white;">Conf Bs As</h2>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <ul class="navHeader">
+                <li><a class="mi_link nav-link" style="color: white;" href="../index.html">La Conferencia</a></li>
+                <li><a class="mi_link nav-link" href="../index.html#los_oradores">Los oradores</a></li>
+                <li><a class="mi_link nav-link" href="../index.html#lugar_fecha">El lugar y la fecha</a></li>
+                <li><a class="mi_link nav-link" href="../index.html#quiero_ser_orador">Conviértete en orador</a></li>
+                <li><a class="mi_link nav-link" style="color: green;" href="#">Comprar tickets</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="container-fluid venta">
+            <form>
+                <div class="row">
+                    <div class="col"></div>
+
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md card tarjetas" id="estudiante">
+                                <div class="card-body">
+                                    <h4>Estudiante</h4>
+                                    <h6>Tienen un descuento</h6>
+                                    <h4>80%</h4>
+                                    <h6 class="text-muted">* presentar documentación</h6>
+                                </div>
+                            </div>
+                            <div class="col-md card tarjetas" id="trainee">
+                                <div class="card-body">
+                                    <h4>Trainee</h4>
+                                    <h6>Tienen un descuento</h6>
+                                    <h4>50%</h4>
+                                    <h6 class="text-muted">* presentar documentación</h6>
+                                </div>
+                            </div>
+                            <div class="col-md card tarjetas" id="junior">
+                                <div class="card-body">
+                                    <h4>Junior</h4>
+                                    <h6>Tienen un descuento</h6>
+                                    <h4>15%</h4>
+                                    <h6 class="text-muted">* presentar documentación</h6>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col"></div>
+                </div>
+
+                <div class="row" style="text-align: center;">
+                    <div class="col"></div>
+
+                    <div class="col-md-6">
+                        <h6>VENTA</h6>
+                        <h3>VALOR DE TICKET $200</h3>
+                    </div>
+
+                    <div class="col"></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-md-3">
+                        <input id="idNombre" type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-3">
+                        <input id="idApellido" type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                    <div class="col"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col"></div>
+
+                    <div class="col-md-6">
+                        <input id = "idCorreo" type="text" class="form-control" placeholder="Correo">
+                    </div>
+
+                    <div class="col"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col"></div>
+
+                    <div class="col-md-3">
+                        <h6 class="text-muted">Cantidad</h6>
+                        <input id="cantTickets" type="text" class="form-control" placeholder="Cantidad">
+                    </div>
+
+                    <div class="col-md-3">
+                        <h6 class="text-muted">Categoría</h6>
+                        <select name="categorias" id="idCategoria">
+                            <option>Estudiante</option>
+                            <option>Trainee</option>
+                            <option>Junior</option>
+                        </select>
+                    </div>
+
+                    <div class="col"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col"></div>
+
+                    <div class="col-md-6">
+                        <label class="label" id="idTotalPagar">Total a pagar: $</label>
+                    </div>
+
+                    <div class="col"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col"></div>
+
+                    <div class="col-md-3">
+                        <button id="btnBorrar" class="btn btn-success" type="reset">Borrar</button>
+                    </div>
+
+                    <div class="col-md-3">
+                        <button id="btnResumen" class="btn btn-success" type="submit" ;>Resumen</button>
+                    </div>
+
+                    <div class="col"></div>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-2 col-lg-1"><a
+                        href="https://www.buenosaires.gob.ar/educacion/codoacodo/preguntas-frecuentes">Preguntas
+                        frecuentes</a></div>
+                <div class="col-md-2 col-lg-1"><a
+                        href="https://www.buenosaires.gob.ar/educacion/codoacodo/formulario-de-contacto">Contáctenos</a>
+                </div>
+                <div class="col-md-2 col-lg-1"><a href="https://www.buenosaires.gob.ar/educacion/noticias">Prensa</a>
+                </div>
+                <div class="col-md-2 col-lg-1"><a href="../index.html">Conferencias</a></div>
+                <div class="col-md-2 col-lg-1"><a
+                        href="https://www.buenosaires.gob.ar/jefaturadegabinete/innovacion/terminos-y-condiciones">Términos
+                        y condiciones</a></div>
+                <div class="col-md-2 col-lg-1"><a href="https://www.buenosaires.gob.ar/privacidad">Privacidad</a></div>
+                <div class="col-md-2 col-lg-1"><a
+                        href="https://www.buenosaires.gob.ar/educacion/estudiantes">Estudiantes</a></div>
+            </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/01.js"></script>
+</body>
+
+</html>
