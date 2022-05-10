@@ -12,7 +12,17 @@
     <script>
         function mensajeEnviado() {
             alert("El mensaje se ha enviado");
-        } 
+        }
+
+        function getCategoria() {
+            var categoria;
+            categoria = document.getElementById("selCategoria").value;
+            alert(categoria);
+
+            var e = document.getElementById('selCategoria');
+            var str = e.options[e.selectedIndex].text;
+            alert(str);
+        }
     </script>
 
     <title>Trabajo integrador</title>
@@ -31,14 +41,11 @@
 
         <div class="btn-group">
             <ul class="navHeader">
-                <li><a class="mi_link nav-link" style="color: white;"
-                        href="#">La Conferencia</a></li>
+                <li><a class="mi_link nav-link" style="color: white;" href="../index.html">La Conferencia</a></li>
                 <li><a class="mi_link nav-link" href="#los_oradores">Los oradores</a></li>
-                <li><a class="mi_link nav-link" href="#">El lugar y la
-                        fecha</a></li>
+                <li><a class="mi_link nav-link" href="#lugar_fecha">El lugar y la fecha</a></li>
                 <li><a class="mi_link nav-link" href="#quiero_ser_orador">Conviértete en orador</a></li>
-                <li><a class="mi_link nav-link" style="color: green;" href="https://www.ticketek.com.ar">Comprar
-                        tickets</a></li>
+                <li><a class="mi_link nav-link" style="color: green;" href="html/tickets.html">Comprar tickets</a></li>
             </ul>
         </div>
     </header>
@@ -76,7 +83,7 @@
                 <div>
                     <div class="color_blanco">
                         <a href="#quiero_ser_orador" class="btn btn-outline-light">Quiero ser orador</a>
-                        <a href="https://www.ticketek.com.ar" class="btn btn-success" style="width: 182px;">Comprar
+                        <a href="html/tickets.html" class="btn btn-success" style="width: 182px;">Comprar
                             tickets</a>
                     </div>
                 </div>
@@ -132,7 +139,8 @@
 
         <br>
 
-        <section class="container-flex imagen_texto">
+        <a name ="lugar_fecha"></a>
+        <section class="container-flex imagen_texto">            
             <div>
                 <img src="img/honolulu.jpg" alt="Honolulu">
             </div>
@@ -152,9 +160,8 @@
 
         <br>
 
-        <section class="container-flex">
-            <a name="quiero_ser_orador"></a>
-
+        <a name="quiero_ser_orador"></a>
+        <section class="container-flex">          
             <div class="orador">
                 <p>CONVIÉRTETE EN UN</p>
                 <h2>ORADOR</h2>
